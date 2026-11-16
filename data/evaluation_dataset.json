@@ -1,0 +1,253 @@
+
+[
+  {
+    "id": 1,
+    "question": "What is Python?",
+    "ground_truth": "Python is a high-level, interpreted, general-purpose programming language."
+  },
+  {
+    "id": 2,
+    "question": "Who created Python?",
+    "ground_truth": "Python was created by Guido van Rossum."
+  },
+  {
+    "id": 3,
+    "question": "When was Python first released?",
+    "ground_truth": "Python was first released in 1991."
+  },
+  {
+    "id": 4,
+    "question": "Where is Python used?",
+    "ground_truth": "Python is used in web development, data science, artificial intelligence, machine learning, automation and software development."
+  },
+  {
+    "id": 5,
+    "question": "What is a variable in Python?",
+    "ground_truth": "Variables are used to store data values. Python does not require explicit variable type declarations."
+  },
+  {
+    "id": 6,
+    "question": "Does Python require explicit variable type declarations?",
+    "ground_truth": "No, Python does not require explicit variable type declarations."
+  },
+  {
+    "id": 7,
+    "question": "What are data types?",
+    "ground_truth": "Data types define the kind of values that can be stored in variables."
+  },
+  {
+    "id": 8,
+    "question": "Name Python's built-in data types.",
+    "ground_truth": "Python supports int, float, str, bool, list, tuple, dict and set."
+  },
+  {
+    "id": 9,
+    "question": "What is the int data type?",
+    "ground_truth": "int is used to represent integer numbers."
+  },
+  {
+    "id": 10,
+    "question": "What is the float data type?",
+    "ground_truth": "float is used to represent decimal numbers."
+  },
+  {
+    "id": 11,
+    "question": "What is the str data type?",
+    "ground_truth": "str is used to represent text."
+  },
+  {
+    "id": 12,
+    "question": "What is the bool data type?",
+    "ground_truth": "bool represents Boolean values, True or False."
+  },
+  {
+    "id": 13,
+    "question": "What is a list in Python?",
+    "ground_truth": "A list is an ordered and mutable collection."
+  },
+  {
+    "id": 14,
+    "question": "What is a tuple in Python?",
+    "ground_truth": "A tuple is an ordered and immutable collection."
+  },
+  {
+    "id": 15,
+    "question": "What is a dictionary in Python?",
+    "ground_truth": "A dictionary stores data as key-value pairs."
+  },
+  {
+    "id": 16,
+    "question": "What is a set in Python?",
+    "ground_truth": "A set is an unordered collection of unique elements."
+  },
+  {
+    "id": 17,
+    "question": "What are conditional statements?",
+    "ground_truth": "Conditional statements execute code based on conditions."
+  },
+  {
+    "id": 18,
+    "question": "Which conditional statements does Python support?",
+    "ground_truth": "Python supports if, elif and else statements."
+  },
+  {
+    "id": 19,
+    "question": "What is the purpose of an if statement?",
+    "ground_truth": "An if statement executes code when a specified condition is true."
+  },
+  {
+    "id": 20,
+    "question": "What is the purpose of an else statement?",
+    "ground_truth": "An else statement executes code when the preceding condition is false."
+  },
+  {
+    "id": 21,
+    "question": "What are loops in Python?",
+    "ground_truth": "Loops are used to repeat instructions."
+  },
+  {
+    "id": 22,
+    "question": "Name the two main types of Python loops.",
+    "ground_truth": "Python supports for loops and while loops."
+  },
+  {
+    "id": 23,
+    "question": "What is a for loop?",
+    "ground_truth": "A for loop is used to repeat instructions while iterating over a sequence or iterable."
+  },
+  {
+    "id": 24,
+    "question": "What is a while loop?",
+    "ground_truth": "A while loop repeats instructions as long as a condition remains true."
+  },
+  {
+    "id": 25,
+    "question": "What is a function in Python?",
+    "ground_truth": "A function is a reusable block of code defined using the def keyword."
+  },
+  {
+    "id": 26,
+    "question": "Which keyword is used to define a function?",
+    "ground_truth": "The def keyword is used to define a function in Python."
+  },
+  {
+    "id": 27,
+    "question": "Why are functions used?",
+    "ground_truth": "Functions are used to create reusable blocks of code."
+  },
+  {
+    "id": 28,
+    "question": "What is object-oriented programming?",
+    "ground_truth": "Object-oriented programming is a programming approach based on classes and objects."
+  },
+  {
+    "id": 29,
+    "question": "Does Python support object-oriented programming?",
+    "ground_truth": "Yes, Python supports classes and objects."
+  },
+  {
+    "id": 30,
+    "question": "What are the main OOP concepts?",
+    "ground_truth": "The main OOP concepts are inheritance, encapsulation, polymorphism and abstraction."
+  },
+  {
+    "id": 31,
+    "question": "What is inheritance?",
+    "ground_truth": "Inheritance is an OOP concept in which a class can acquire properties and methods from another class."
+  },
+  {
+    "id": 32,
+    "question": "What is encapsulation?",
+    "ground_truth": "Encapsulation is an OOP concept that combines data and methods and controls access to them."
+  },
+  {
+    "id": 33,
+    "question": "What is polymorphism?",
+    "ground_truth": "Polymorphism allows the same interface or method name to have different behaviors."
+  },
+  {
+    "id": 34,
+    "question": "What is abstraction?",
+    "ground_truth": "Abstraction hides implementation details and exposes essential features."
+  },
+  {
+    "id": 35,
+    "question": "What is exception handling?",
+    "ground_truth": "Exception handling is used to handle runtime errors in a program."
+  },
+  {
+    "id": 36,
+    "question": "Which keywords are used for exception handling?",
+    "ground_truth": "Python uses try, except, else and finally for exception handling."
+  },
+  {
+    "id": 37,
+    "question": "What is the purpose of try?",
+    "ground_truth": "The try block contains code that may raise an exception."
+  },
+  {
+    "id": 38,
+    "question": "What is the purpose of except?",
+    "ground_truth": "The except block handles an exception raised in the try block."
+  },
+  {
+    "id": 39,
+    "question": "What is the purpose of finally?",
+    "ground_truth": "The finally block contains code that executes whether an exception occurs or not."
+  },
+  {
+    "id": 40,
+    "question": "What are Python libraries?",
+    "ground_truth": "Python libraries are collections of reusable code that provide functionality for different tasks."
+  },
+  {
+    "id": 41,
+    "question": "Name some popular Python libraries.",
+    "ground_truth": "Popular Python libraries include NumPy, Pandas, Matplotlib, Scikit-learn and TensorFlow."
+  },
+  {
+    "id": 42,
+    "question": "What is NumPy used for?",
+    "ground_truth": "NumPy is commonly used for numerical computing and working with arrays."
+  },
+  {
+    "id": 43,
+    "question": "What is Pandas used for?",
+    "ground_truth": "Pandas is commonly used for data manipulation and analysis."
+  },
+  {
+    "id": 44,
+    "question": "What is Matplotlib used for?",
+    "ground_truth": "Matplotlib is used for creating data visualizations and plots."
+  },
+  {
+    "id": 45,
+    "question": "What is Scikit-learn used for?",
+    "ground_truth": "Scikit-learn provides tools for machine learning tasks."
+  },
+  {
+    "id": 46,
+    "question": "What is TensorFlow used for?",
+    "ground_truth": "TensorFlow is a library used for machine learning and deep learning."
+  },
+  {
+    "id": 47,
+    "question": "Is Python interpreted or compiled?",
+    "ground_truth": "Python is commonly described as an interpreted programming language."
+  },
+  {
+    "id": 48,
+    "question": "Is Python a general-purpose programming language?",
+    "ground_truth": "Yes, Python is a general-purpose programming language."
+  },
+  {
+    "id": 49,
+    "question": "What is automation in Python?",
+    "ground_truth": "Python can be used to automate repetitive tasks and processes."
+  },
+  {
+    "id": 50,
+    "question": "Can Python be used for artificial intelligence?",
+    "ground_truth": "Yes, Python is widely used in artificial intelligence and machine learning."
+  }
+]

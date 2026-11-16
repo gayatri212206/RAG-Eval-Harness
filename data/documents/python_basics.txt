@@ -1,0 +1,82 @@
+PYTHON PROGRAMMING
+
+Python is a high-level, interpreted, general-purpose programming language. It was created by Guido van Rossum and first released in 1991.
+
+Python is widely used in web development, data science, artificial intelligence, machine learning, automation and software development.
+
+1. Variables:
+Variables are used to store data values. Python does not require explicit variable type declarations.
+
+Example:
+name = "Gayatri"
+age = 22
+
+2. Data Types:
+Python supports several built-in data types:
+- int: Integer numbers
+- float: Decimal numbers
+- str: Text
+- bool: True or False
+- list: Ordered and mutable collection
+- tuple: Ordered and immutable collection
+- dict: Key-value pairs
+- set: Unordered collection of unique elements
+
+3. Conditional Statements:
+if, elif and else are used to execute code based on conditions.
+
+4. Loops:
+Python supports for loops and while loops to repeat instructions.
+
+5. Functions:
+Functions are reusable blocks of code defined using the def keyword.
+
+6. Object-Oriented Programming:
+Python supports classes and objects. Important OOP concepts include inheritance, encapsulation, polymorphism and abstraction.
+
+7. Exception Handling:
+Python uses try, except, else and finally to handle runtime errors.
+
+8. Libraries:
+Popular Python libraries include NumPy, Pandas, Matplotlib, Scikit-learn and TensorFlow.
+
+
+9. OOP Concepts:
+
+Inheritance allows a class to acquire properties and methods from another class.
+
+Encapsulation combines data and methods and controls access to them.
+
+Polymorphism allows the same interface or method name to have different behaviors.
+
+Abstraction hides implementation details and exposes essential features.
+
+10. Exception Handling:
+
+The try block contains code that may raise an exception.
+
+The except block handles exceptions raised in the try block.
+
+The finally block executes whether an exception occurs or not.
+
+11. Python Libraries:
+
+NumPy is used for numerical computing and working with arrays.
+
+Pandas is used for data manipulation and analysis.
+
+Matplotlib is used for creating graphs, plots and data visualizations.
+
+Scikit-learn provides tools for machine learning tasks.
+
+TensorFlow is used for machine learning and deep learning.
+
+12. Additional Python Concepts:
+
+Python is commonly described as an interpreted programming language.
+
+Python is a general-purpose programming language.
+
+Python can automate repetitive tasks and processes.
+
+Python is widely used in artificial intelligence and machine learning.

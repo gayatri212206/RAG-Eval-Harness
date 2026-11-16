@@ -1,0 +1,35 @@
+
+name: RAG Evaluation CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Run RAG evaluation
+        run: |
+          python -m src.evaluation.evaluator
+
+      - name: Check evaluation threshold
+        run: |
+          python -c "import json, sys; d=json.load(open('results/evaluation_summary.json')); scores=[v['average_coverage'] for v in d.values() if isinstance(v, dict) and 'average_coverage' in v]; print('Method scores:', scores); sys.exit(0 if len(scores)==4 and sum(scores)/len(scores)>=75 else 1)"

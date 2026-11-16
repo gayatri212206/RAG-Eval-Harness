@@ -1,0 +1,18 @@
+{
+    "Simple": {
+        "average_coverage": 84.67,
+        "questions_evaluated": 50
+    },
+    "Semantic": {
+        "average_coverage": 85.41,
+        "questions_evaluated": 50
+    },
+    "Hybrid": {
+        "average_coverage": 83.1,
+        "questions_evaluated": 50
+    },
+    "Reranking": {
+        "average_coverage": 62.55,
+        "questions_evaluated": 50
+    }
+}
