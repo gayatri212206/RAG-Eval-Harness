@@ -8,6 +8,8 @@ from src.retrieval.simple import SimpleRetriever
 from src.retrieval.semantic import SemanticRetriever
 from src.retrieval.hybrid import HybridRetriever
 from src.retrieval.reranking import RerankingRetriever
+from src.ingestion import load_documents
+from src.vector_store import VectorStore
 
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
@@ -49,7 +51,14 @@ def main():
         dataset = json.load(file)
 
     print("Loading retrieval methods...")
+        # Initialize vector database before evaluation
+    vector_store = VectorStore()
 
+    if vector_store.collection.count() == 0:
+        print("Vector database is empty. Loading documents...")
+        documents = load_documents()
+        vector_store.add_documents(documents)
+        
     retrievers = {
         "Simple": SimpleRetriever(),
         "Semantic": SemanticRetriever(),
