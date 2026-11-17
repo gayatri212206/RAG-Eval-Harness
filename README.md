@@ -104,6 +104,26 @@ The framework evaluates 50 questions using four retrieval methods, resulting in 
 | Hybrid | 83.10% |
 | Reranking | 62.55% |
 
+
+### Retrieval Performance Comparison
+
+```mermaid
+xychart-beta
+    title "Retrieval Method Coverage Comparison"
+    x-axis ["Simple", "Semantic", "Hybrid", "Reranking"]
+    y-axis "Coverage (%)" 0 --> 100
+    bar [84.67, 85.41, 83.10, 62.55]
+```
+
+**Key Observations:**
+- Semantic-style retrieval achieved the highest coverage at 85.41%.
+- Simple retrieval achieved 84.67%.
+- Hybrid retrieval achieved 83.10%.
+- Reranking achieved 62.55%.
+
+The average coverage across all four methods was 78.93%, exceeding the configured CI/CD threshold of 75%.
+
+
 **Best-performing method:** Semantic-style Retrieval — 85.41%
 
 The average coverage across all four methods is approximately 78.93%.
