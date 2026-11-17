@@ -43,7 +43,46 @@ It helps identify which retrieval strategy provides better coverage of the expec
 | Scikit-learn | Supporting ML utilities |
 | GitHub Actions | CI/CD automation |
 
-## 4. Retrieval Methods
+
+## 4. System Architecture
+
+```mermaid
+flowchart TD
+    A["Source Documents"] --> B["Document Ingestion"]
+    B --> C["Text Chunking"]
+
+    C --> D["Simple Chunking"]
+    C --> E["Semantic-style Chunking"]
+
+    D --> F["ChromaDB Vector Store"]
+    E --> G["Semantic Vector Collection"]
+
+    F --> H["Simple Retrieval"]
+    F --> I["Hybrid Retrieval"]
+    F --> J["BM25 Reranking"]
+
+    I --> K["BM25 + Vector Search"]
+    K --> L["Reciprocal Rank Fusion"]
+
+    G --> M["Semantic Retrieval"]
+
+    H --> N["RAG Evaluation Harness"]
+    L --> N
+    J --> N
+    M --> N
+
+    Q["50 Questions + Ground Truth"] --> N
+
+    N --> O["Keyword Coverage Evaluation"]
+    O --> P["JSON / CSV Reports"]
+    P --> R["GitHub Actions CI/CD"]
+    R --> S{"Average Coverage >= 75%?"}
+    S -->|Yes| T["Build Passed"]
+    S -->|No| U["Build Failed"]
+```
+
+
+## 5. Retrieval Methods
 
 | Method | Description |
 |---|---|
@@ -54,7 +93,7 @@ It helps identify which retrieval strategy provides better coverage of the expec
 
 **Note:** Semantic-style chunking currently uses paragraph and sentence boundaries; it does not use embedding-similarity-based semantic segmentation. Reranking uses BM25 rather than a neural cross-encoder.
 
-## 5. Evaluation Results
+## 6. Evaluation Results
 
 The framework evaluates 50 questions using four retrieval methods, resulting in 200 total evaluation tests.
 
@@ -77,7 +116,7 @@ It measures the proportion of unique, non-stopword terms in the ground-truth ans
 
 This is a retrieval coverage proxy, not a measure of complete answer correctness or factual accuracy.
 
-## 6. Project Structure
+## 7. Project Structure
 
 ```text
 RAG-Eval-Harness/
@@ -115,7 +154,7 @@ RAG-Eval-Harness/
 └── README.md
 ```
 
-## 7. Installation and Setup
+## 8. Installation and Setup
 
 ### Prerequisites
 
@@ -153,7 +192,7 @@ python -m src.evaluation.evaluator
 
 The evaluation will run all four retrieval methods against the 50-question dataset.
 
-## 8. Evaluation Reports
+## 9. Evaluation Reports
 
 After execution, the following reports are generated inside the `results/` directory:
 
@@ -161,7 +200,7 @@ After execution, the following reports are generated inside the `results/` direc
 - `evaluation_results.csv` — Tabular evaluation results.
 - `evaluation_summary.json` — Average coverage for each retrieval method.
 
-## 9. GitHub Actions CI/CD
+## 10. GitHub Actions CI/CD
 
 The project uses GitHub Actions to automate evaluation.
 
@@ -185,7 +224,7 @@ If the threshold is not met, the workflow fails.
 
 [View GitHub Actions](https://github.com/gayatri212206/RAG-Eval-Harness/actions)
 
-## 10. Current Limitations
+## 11. Current Limitations
 
 - Evaluation currently uses a single Python programming document.
 - The dataset contains 50 questions.
@@ -193,7 +232,7 @@ If the threshold is not met, the workflow fails.
 - Semantic-style chunking is based on text boundaries rather than embedding similarity.
 - BM25 is used for reranking instead of a neural reranking model.
 
-## 11. Future Improvements
+## 12. Future Improvements
 
 - Add more source documents and domain-specific datasets.
 - Implement Recall@K, Precision@K and Mean Reciprocal Rank (MRR).
@@ -202,14 +241,6 @@ If the threshold is not met, the workflow fails.
 - Build an interactive evaluation dashboard.
 - Deploy a live project demonstration.
 
-## 12. Author
 
-**Gayatri Manoj Mohite**
-
-BSc Computer Science Student | Generative AI & Data Science
-
-GitHub: [gayatri212206](https://github.com/gayatri212206)
-
----
 
 *Built to experiment with, evaluate, and compare retrieval strategies in RAG systems.*
