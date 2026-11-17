@@ -1,8 +1,8 @@
 chromadb
 rank-bm25
 pypdf
-pandas
 numpy
 scikit-learn
 pytest
 tqdm
+streamlit
